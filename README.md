@@ -3,6 +3,8 @@
 A modern, clean, and interactive **Candidate Management System** built with **Next.js (App Router)** and **shadcn/ui**.  
 This project allows you to add candidates through a form and instantly view and manage them on a dashboard — all with a smooth, minimal UI.
 
+**Deployment Link** : https://candidater-next-js-webapp.vercel.app/
+
 ---
 
 ## ✨ Features
