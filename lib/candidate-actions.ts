@@ -6,9 +6,9 @@ export function validateCandidateForm(data: CandidateFormData) {
 
   if (!result.success) {
     const errors: Partial<CandidateFormData> = {};
-    result.error.errors.forEach((err) => {
-      const field = err.path[0] as keyof CandidateFormData;
-      errors[field] = err.message;
+    result.error.issues.forEach((issue) => {
+      const field = issue.path[0] as keyof CandidateFormData;
+      errors[field] = issue.message;
     });
     return { isValid: false, errors };
   }
